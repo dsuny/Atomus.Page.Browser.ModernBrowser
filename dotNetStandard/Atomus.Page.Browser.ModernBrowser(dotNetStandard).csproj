@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Atomus</RootNamespace>
+    <AssemblyName>Atomus.Page.Browser.ModernBrowser</AssemblyName>
+    <Authors>DSUN</Authors>
+    <Company>Atomus</Company>
+    <Product>Atomus Framework in .Net Standard 2.0</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+    <Description>Atomus Framework in .Net Standard 2.0</Description>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Page.Browser.ModernBrowser</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Page.Browser.ModernBrowser</RepositoryUrl>
+    <PackageIcon>atomus.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Atomus Atomus.Core Browser ModernBrowser AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 1.0.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DefaultBrowserStandardDetail.xaml.cs" />
+    <Compile Remove="DefaultBrowserStandardMaster.xaml.cs" />
+    <Compile Remove="Views\DefaultBrowserStandardDetail.xaml.cs" />
+    <Compile Remove="Views\DefaultBrowserStandardMaster.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="DefaultBrowserStandardDetail.xaml" />
+    <EmbeddedResource Remove="DefaultBrowserStandardMaster.xaml" />
+    <EmbeddedResource Remove="Views\DefaultBrowserStandardDetail.xaml" />
+    <EmbeddedResource Remove="Views\DefaultBrowserStandardMaster.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetStandard" Version="1.0.2.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ModernBrowser.xaml.cs">
+      <DependentUpon>ModernBrowser.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\ModernBrowser.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Views\DefaultBrowserStandard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
