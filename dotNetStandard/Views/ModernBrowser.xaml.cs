@@ -222,48 +222,8 @@ namespace Atomus.Page.Browser
                         {
                             switch (_ASSEMBLY_ID)
                             {
-                                //case 17:
-                                //    _Core = new Atomus.AutoKing.Page.CM00();//▶ Main
-                                //    break;
-
-                                //case 18:
-                                //    _Core = new Atomus.AutoKing.Page.CM31();//▶ WebView
-                                //    break;
-
-                                //case 5:
-                                //    _Core = new Atomus.AutoKing.Page.AccountStandard();//  ▶ 계정
-                                //    break;
-
-                                //case 12:
-                                //    _Core = new Atomus.AutoKing.Page.CM02();//▶ 수익 & 랭킹
-                                //    break;
-
-                                //case 15:
-                                //    _Core = new Atomus.AutoKing.Page.CM05();//▶ 자산 변동
-                                //    break;
-
-                                //case 11:
-                                //    _Core = new Atomus.AutoKing.Page.CM03();//  ▶ 스켈핑(서버)
-                                //    break;
-
-                                //case 13:
-                                //    _Core = new Atomus.AutoKing.Page.CM04();//  ▶ 포인트 관리
-                                //    break;
-
-                                //case 14:
-                                //    _Core = new Atomus.AutoKing.Page.CM11();//  ▶ 환경 설정
-                                //    break;
-
-                                //case 16:
-                                //    _Core = new Atomus.AutoKing.Page.CM15();//  ▶ AutoKing Info
-                                //    break;
-
-                                //case 9:
-                                //    _Core = new Atomus.AutoKing.Page.CM21();//  ▶ 입금, 출금 조회
-                                //    break;
-
-                                //case 7:
-                                //    _Core = new Atomus.AutoKing.Page.CM22();//  ▶ 자동매매 서버(스켈핑) 관리
+                                //case 1:
+                                //    _Core = new Atomus.Control.Page.CM00();
                                 //    break;
 
                                 default:
